@@ -1,0 +1,44 @@
+h2 {
+    background-color: white;
+    font-family: arial;
+    font-style: bold;
+    color: lightskyblue;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#caixa {
+    background-color: white;
+    border-radius: 10px;
+    height: 30px;
+    border: 4px solid;
+    border-color:grey;
+}
+
+#caixa:focus {
+    background-color: cfdbe6;
+    color: white;
+    border: 6px solid;
+    border-color:grey;
+}
+
+#botao {
+    height: 30px;
+    width: 120px;
+    background-color: grey;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    border-color:grey;
+    font-weight:bold;
+}
+
+#botao:hover {
+    font-size: 15px;
+    background-color: grey;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    border-color:grey;
+
+}

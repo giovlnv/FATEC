@@ -1,0 +1,17 @@
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+# Local History for Visual Studio Code
+.history/
+
+# ignorar primeiro semestre
+1_sem
+
+# ignorar BDR, ES e MPC
+2_sem/BancoDadosRelacional
+2_sem/EngenhariaSoftware2
+2_sem/MatematicaComputacao
