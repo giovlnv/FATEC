@@ -5,8 +5,8 @@
     $txt_model = $_POST ["txt_model"];
     $sel_monta = $_POST ["sel_monta"];
     $txt_placa = $_POST ["txt_placa"];
-    $txt_ano = $$_POST ["txt_ano"];
-    $txt_valor = $$_POST ["txt_valor"];
+    $txt_ano = $_POST ["txt_ano"];
+    $txt_valor = $_POST ["txt_valor"];
     if ($txt_ano > 1996) {
         $ipva = $txt_valor * 0.04;}
     else {$ipva = 0;}

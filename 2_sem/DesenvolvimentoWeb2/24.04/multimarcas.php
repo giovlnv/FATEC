@@ -21,7 +21,7 @@
             <input type="text" name="txt_model" id="txt_model" required>
 
             <label for="sel_monta">MONTADORA: </label>
-            <select name="montadora" id="sel_monta" class="sel_monta" required>
+            <select name="sel_monta" id="sel_monta" class="sel_monta" required>
             <option value="Chevrolet">Chevrolet</option>
             <option value="Ford">Ford</option>
             <option value="Fiat">Fiat</option>
