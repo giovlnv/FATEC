@@ -15,12 +15,12 @@
 
         <div class="form-group">
             <label for="txt_renavam">RENAVAM:</label>
-            <input class="input" type="text" name="txt_renavam" id="txt_renavam" required>
+            <input class="inputs" type="text" name="txt_renavam" id="txt_renavam" required>
         </div>
 
         <div class="form-group">
             <label for="txt_model">MODELO DO VEÍCULO:</label>
-            <input class="input" type="text" name="txt_model" id="txt_model" required>
+            <input class="inputs" type="text" name="txt_model" id="txt_model" required>
         </div>
 
             <div class="form-group">
@@ -42,18 +42,18 @@
 
             <div class="form-group">
                 <label for="txt_placa">PLACA:</label>
-                <input class="input" type="text" name="txt_placa" id="txt_placa" required>
+                <input class="inputs" type="text" name="txt_placa" id="txt_placa" required>
             </div>
 
             <div class="form-group">
                 <label for="txt_ano">ANO:</label>
-                <input class="input" type="text" name="txt_ano" id="txt_ano" required>
+                <input class="inputs" type="text" name="txt_ano" id="txt_ano" required>
             </div>
 
 
         <div class="form-group">
             <label for="txt_valor">VALOR DO VEÍCULO:</label>
-            <input class="input" type="text" name="txt_valor" id="txt_valor" required>
+            <input class="inputs" type="text" name="txt_valor" id="txt_valor" required>
         </div>
 
         <div class="form-group">

@@ -63,7 +63,7 @@ Busque pela descrição: <input class="busca" type="text" name="busca_desc">&nbs
 			<td class="linha-tabela"><?php echo 'R$'.$linha['valor']; ?></td>
 			<td class="linha-tabela"><?php echo 'R$'.$linha['ipva']; ?></td>
             <th class="linha-tabela"><a href="listagem.php?apagar='<?php echo $linha['renavam']; ?>'"><i class="bx bx-trash"></i></a></th>
-            <th class="linha-tabela"><a href="listagem.php?edit='<?php echo $linha['renavam']; ?>'"><i class="bx bx-edit"></i></a></th>
+            <th class="linha-tabela"><a href="editar.php?edit='<?php echo $linha['renavam']; ?>'"><i class="bx bx-edit"></i></a></th>
 			<tr>
 		</tbody>
 			<?php  } 

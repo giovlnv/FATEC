@@ -173,3 +173,11 @@ table.table {
     font-weight: bold;
     color: black;
   }
+
+/* pag de editar */
+
+  .inputs {
+    border: 1px #1f1f1f solid;
+    height: 5vh;
+    padding: 5px;
+}
