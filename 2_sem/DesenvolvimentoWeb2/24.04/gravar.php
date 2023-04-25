@@ -14,24 +14,18 @@
                         WHERE renavam='$txt_renavam'");
 
     if (mysql_num_rows($sql) > 0) {
-        echo "<center>";
-        echo "<hr>";
-        echo "Veículo ja registrado!";
-        echo "<hr>";
-        echo "<br>";
+        echo '<script type="text/javascript">',
+            'alert("Veiculo ja registrado!");',
+            'window.location.href = "multimarcas.php";',
+            '</script>';
     } else {
         $sql=mysql_query ("INSERT INTO tb_carros(renavam,model,monta,placa,ano,valor,ipva) 
                             VALUES ('$txt_renavam','$txt_model','$sel_monta','$txt_placa','$txt_ano','$txt_valor','$ipva')");
-            echo "<center>";
-            echo "<hr>";
-            echo "Veículo cadastrado com sucesso!";
-            echo "<hr>";
-            echo "<br>";
-            echo "<br>";
-            echo "<center>";
-            echo "<hr>";
-            echo "<a href=\"multimarcas.php\">Retornar a gravacao </a>"; 
-            echo "<hr>";
+
+        echo '<script type="text/javascript">',
+            'alert("Veiculo registrado com sucesso!");',
+            'window.location.href = "multimarcas.php";',
+            '</script>';
 
     }
 

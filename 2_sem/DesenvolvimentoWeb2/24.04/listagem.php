@@ -10,14 +10,10 @@ if(isset($_POST['busca_desc']) != '') {
 
 if(isset($_GET['apagar'])){
 	$sql = mysql_query("delete from tb_carros where renavam=". $_GET['apagar']);
-	 echo "<br>";
-	 echo "<center>";
-	 echo "<hr>";
-	 echo "Veículo excluido com sucesso!";
-	 echo "<br>";
-	 echo "<br>";
-	 echo "<a href=\"listagem.php\">Voltar</a>"; 
-	 echo "<hr>";
+	echo '<script type="text/javascript">',
+     'alert("Veiculo excluido!");',
+	 'window.location.href = "listagem.php";',
+     '</script>';
 	return false;
 	
 }
@@ -28,54 +24,55 @@ if(isset($_GET['apagar'])){
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
 </head>
 <body>	  
 <center>
 <br><br>
-<form name="frm_cadastro" method="POST" action="listagem.php">
-Busque pela descrição: <input type="text" name="busca_desc"><input type="submit" value="FILTRAR">
+<div class="box">
+<form class="lista" name="frm_cadastro" method="POST" action="listagem.php">
+Busque pela descrição: <input class="busca" type="text" name="busca_desc">&nbsp;&nbsp;<input class="voltar" type="submit" value="FILTRAR">
 </form>
+<br><br>
 
-
-<table border="1" align="center">
-
+<table class="table">
+		<thead>    
 			<tr>
-			<th class="tabela">RENAVAM</th>
-			<th class="tabela">DESCRIÇÃO</th>
-			<th class="tabela">ANO FABRIC</th>
-			<th class="tabela">VALOR</th>
-			<th class="tabela">IPVA</th>
+				<th colspan="11e"><center>LISTA DE VEÍCULOS</center></th>
 			</tr>
 			<tr>
-			
+			<th scope="col">RENAVAM</th>
+			<th scope="col">DESCRIÇÃO</th>
+			<th scope="col">ANO FABRIC</th>
+			<th scope="col">VALOR</th>
+			<th scope="col">IPVA</th>
+			<th scope="col"></th>
+			<th scope="col"></th>
+			</tr>
+			<tr>
+		</thead>
+		<tbody>	
 			<?php
 				while($linha = mysql_fetch_assoc($sql)) {
 			?>
-			<td><?php echo $linha['renavam']; ?></td>
-			<td><?php echo $linha['monta']; echo $linha['model']?></td>
-			<td><?php echo $linha['ano']; ?></td>
-			<td><?php echo 'R$'.$linha['valor']; ?></td>
-			<td><?php echo 'R$'.$linha['ipva']; ?></td>
-            <th><a href="listagem.php?apagar='<?php echo $linha['renavam']; ?>'"><i class="bx bx-trash"></i></a></th>
-            <th><a href="listagem.php?edit='<?php echo $linha['renavam']; ?>'"><i class="bx bx-edit"></i></a></th>
+			<td class="linha-tabela"><?php echo $linha['renavam']; ?></td>
+			<td class="linha-tabela"><?php echo $linha['monta']; echo ' '; echo $linha['model']?></td>
+			<td class="linha-tabela"><?php echo $linha['ano']; ?></td>
+			<td class="linha-tabela"><?php echo 'R$'.$linha['valor']; ?></td>
+			<td class="linha-tabela"><?php echo 'R$'.$linha['ipva']; ?></td>
+            <th class="linha-tabela"><a href="listagem.php?apagar='<?php echo $linha['renavam']; ?>'"><i class="bx bx-trash"></i></a></th>
+            <th class="linha-tabela"><a href="listagem.php?edit='<?php echo $linha['renavam']; ?>'"><i class="bx bx-edit"></i></a></th>
 			<tr>
-            			
+		</tbody>
 			<?php  } 
-			  
-              
-			  echo "<br>";
-			  echo "<center>";
-			  echo "<hr>";
-              echo "<a href=\"multimarcas.php\">Retornar a gravacao </a>"; 
-			  echo "<hr>";
-              echo "<br>";
-              echo "<br>";
 			?>
 </table>
+<br><br>
+<input type="button" value="VOLTAR" id="btn_voltar" onclick="voltar()" class="voltar">
+</div>
 </body>
+<script src="js/script.js"></script>
+
 </html>
-
-
-
-
-

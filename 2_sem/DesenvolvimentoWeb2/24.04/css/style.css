@@ -1,5 +1,10 @@
+body{
+    background-color: #A6B5BB;
+    max-width: 100vw;
+    font-family: 'Poppins', sans-serif;
+}
+
 h2 {
-    font-family: arial;
     font-style: bold;
     color: A9927;
     font-weight: bold;
@@ -7,46 +12,43 @@ h2 {
     text-align: center;
 }
 
-.caixa {
-    background-color: white;
-    border-radius: 10px;
-    border: 4px solid;
-    border-color:grey;
-}
+/* forms de cadastro */
 
 .enviar {
-    background-color: #5E503F;
-    color: A9927;
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    filter: drop-shadow(5px 8px 4px grey);
     font-weight: bold;
-    text-transform: uppercase;
     letter-spacing: 2px;
     height: 40px;
+    width: 100%;
     font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
-    border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: 0.5s;
 }
 
 .enviar.hover {
-    background-color: #A9927D;
-    color: #5E503F;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    height: 40px;
-    font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
-    border: none;
-    cursor: pointer;
-    transition: 0.5s;
+    background-color: grey;
+    color: black;
 }
 
-input {
+.input {
     border: 1px #1f1f1f solid;
-    height: 30px;
+    height: 15px;
     padding: 5px;
+}
+
+select {
+    border: 1px #1f1f1f solid;
+    height: 15px;
+    padding: 5px;
+}
+
+.monta{
+    height: 5vh;
+    width: 100%;
 }
 
 .form { 
@@ -54,43 +56,120 @@ input {
     display: flex;
     flex-direction: column;
     gap: 5px;
-}
-
-.cadastro {
     width: 400px;
     height: auto;
     background-color: white;
     color: #3d3d3d;
-
     position: absolute;
-
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-
 }
 
-.cargo{
-	color: #49111C;
-	font-family: arial;
-	font-size: 12px;
-	font-style: normal;
-	background-color: white;
-	padding: 2px;
+.form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input[type="text"],
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: 0;
+    border-color: #3d3d3d;
+    box-shadow: 0 0 0 0.2rem rgba(57, 57, 57, 0.25);
+  }
+  
+
+/* pag de listagem */
+
+.bx {
+    color: black;
+}
+
+.box {
+  padding: 30px;
+  gap: 5px;
+  min-width: 60vw;
+  background-color: white;
+  color: #3d3d3d;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.voltar {
+  background-color: whitesmoke;
+  color: black;
+  border: none;
+  filter: drop-shadow(5px 8px 4px grey);
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 4vh;
+  width: 10vw;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.voltar.hover {
+  background-color: grey;
+  color: black;
+}
+
+.busca {
+    border: 1px #1f1f1f solid;
     height: 30px;
-}
-
-.tabela {
-    background-color: #A9927D;
-    color: #5E503F;
     padding: 5px;
 }
 
-.resultados {
-    align-items: center;
-    padding: 5px;
+.table-responsive{
+    min-height: 50vh;
+    min-width: 50vw;
+    background: var(--white);
 }
+
+table.table {
+    border: 2px solid black;
+    background-color: #EEEEEE;
+    width: 70%;
+    padding-top: 20vh;
+    min-height: 15vh;
+    border-collapse: collapse;
+  }
+  table.table td, table.table th {
+    border: 2px solid #AAAAAA;
+    padding: 2px 1px;
+    text-align: center;
+  }
+  table.table tr:nth-child(even) {
+    background: #C8C8C8;
+  }
+  table.table thead {
+    background: #8A92A4;
+    background: -moz-linear-gradient(top, #a7adbb 0%, #959dad 66%, #8A92A4 100%);
+    background: -webkit-linear-gradient(top, #a7adbb 0%, #959dad 66%, #8A92A4 100%);
+    background: linear-gradient(to bottom, #a7adbb 0%, #959dad 66%, #8A92A4 100%);
+    border-bottom: 2px solid #444444;
+  }
+  table.table thead th {
+    font-weight: bold;
+    color: black;
+  }
