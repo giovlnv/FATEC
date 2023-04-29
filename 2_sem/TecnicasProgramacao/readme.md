@@ -5,4 +5,4 @@
 - 24.02 > Laços while, do while e for, Estruturas de erros; <br>
 - 03.03 > Funções ou Métodos; <br>
 - 17.03 > POO, Conceitos básicos: Objeto, Classe, Atributo e Método; <br>
-- 14.04 > POO, Conceitos fundamentais: Intância, Herança, Encapsulamento e Polimorfismo; <br>
+- 14.04 > POO, Conceitos fundamentais: Instância, Herança, Encapsulamento e Polimorfismo; <br>
