@@ -7,3 +7,7 @@
 - 15.03 > Pilhas; <br>
 - 22.03 > Pilhas; <br>
 - 12.04 > Pilhas; <br>
+- 19.04 > Fila; <br>
+- 26.04 > Recursividade; <br>
+- 03.05 > Classes; <br>
+- 10.05 > Listas ligadas; <br>

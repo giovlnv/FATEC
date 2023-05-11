@@ -6,3 +6,5 @@
 - 03.03 > Funções ou Métodos; <br>
 - 17.03 > POO, Conceitos básicos: Objeto, Classe, Atributo e Método; <br>
 - 14.04 > POO, Conceitos fundamentais: Instância, Herança, Encapsulamento e Polimorfismo; <br>
+- 28.04 > Exercícios de POO; <br>
+- 05.05 > Gerenciadores de Layout e Interfaces Gráficas; <br>
