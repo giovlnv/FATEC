@@ -7,14 +7,19 @@ if(isset($_SESSION['form_preench'])) {
     $recheio_pedido = $_SESSION['recheio_pedido'];
     $adicional_pedido = $_SESSION['adicional_pedido'];
     $obs = $_SESSION['obs'];
-    $ende = $_SESSION['ende'];
+    $precin = $_SESSION['precin'];
+    $cod_bolo = $_SESSION['cod_bolo'];
+    $descricao = $_SESSION['descricao'];
+
 } else {   
     $tam_pedido ='';
     $massa_pedido ='';
     $recheio_pedido ='';
     $adicional_pedido = '';
     $obs ='';    
-    $ende ='';
+    $precin =''; 
+    $cod_bolo = '';
+    $descricao = '';
 }
 
 if(isset($_SESSION['logged_in'])) {
@@ -230,14 +235,21 @@ $login_status = 'deslogado';
                     <input type="hidden" class="form-control" id="preco_total" readonly>
                 </div>
 
-                <input type="hidden" id="cod_bolo" name="cod_bolo">
-                <input type="hidden" id="preco_final" name="preco_final">
-                <input type="hidden" id="descricao" name="descricao">
+                <input type="hidden" id="cod_bolo" name="cod_bolo" value="<?php echo $cod_bolo; ?>">
+                <input type="hidden" id="preco_final" name="preco_final" value="<?php echo $precin; ?>">
+                <input type="hidden" id="descricao" name="descricao" value ="<?php echo $descricao; ?>">
 
                 <input type="hidden" id="login_status" name="login_status" value="<?php echo $login_status ?>">
 
                 <input type="text" class="form-control" id="txt_obs" name="txt_obs" placeholder="Observações ou comentários" value="<?php echo $obs; ?>">
-                <input id="btn_pedir" type="submit" name="btn_pedir" placeholder="Adicionar no carrinho" class="btn btn_pedir btn-primary mb1 bg-fuchsia">
+                <?php
+
+                if ($precin > 0) {
+                    echo '<input id="btn_pedir" type="submit" name="btn_pedir" value="Adicionar ao carrinho (R$ ' . $precin . ')" class="btn btn_pedir btn-primary mb1 bg-fuchsia">';
+                } else {
+                    echo '<input id="btn_pedir" type="submit" name="btn_pedir" placeholder="Adicionar no carrinho" class="btn btn_pedir btn-primary mb1 bg-fuchsia">';
+                }
+                ?>
                 </form>
 
                 </container>

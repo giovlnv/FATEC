@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
           if (login_status === 'logado') {
             form.action = "php/adicionar_carrinho.php";
           } else {
-            form.action = "php/login.php";
+            form.action = "php/preforms.php";
           }
           form.submit();
         } else {
@@ -96,6 +96,15 @@ for (var i = 0; i < vitrineImagens.length; i++) {
     obterCaracteristicasSelecionadas();
     
   });
+}
+
+function verificarOpcaoBase() {
+  var selectElement = document.getElementById("massa_pedido");
+  var opcaoBase = selectElement.options[0];
+
+  if (!opcaoBase.selected) {
+    obterCaracteristicasSelecionadas();
+  }
 }
 
 

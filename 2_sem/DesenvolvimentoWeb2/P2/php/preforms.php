@@ -7,6 +7,10 @@ session_start();
     $_SESSION['recheio_pedido'] = $_POST["recheio_pedido"];
     $_SESSION['adicional_pedido'] = $_POST["adicional_pedido"];
     $_SESSION['obs'] = $_POST["txt_obs"];
+    $_SESSION['precin'] = $_POST["preco_final"];
+    $_SESSION['cod_bolo'] = $_POST["cod_bolo"];
+    $_SESSION['descricao'] = $_POST["descricao"];
+
     header("Location: login.php");
     
 ?>

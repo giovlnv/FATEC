@@ -85,11 +85,11 @@
 			$_SESSION['username'] = $linha['nome'];
 		
 			if(isset($_SESSION['form_preench'])) {
-				header("Location: ..\index.php#pedidos");
+				header("Location: ../index.php#pedidos");
 			} elseif ($usuario == "admin@admin" || $usuario == "admin") {
 				header("Location: pedidos_admin.php");
 			} else {
-				header("Location: ..\index.php");
+				header("Location: ../index.php");
 			}
 			
 			
