@@ -8,3 +8,4 @@
 - 14.04 > POO, Conceitos fundamentais: Instância, Herança, Encapsulamento e Polimorfismo; <br>
 - 28.04 > Exercícios de POO; <br>
 - 05.05 > Gerenciadores de Layout e Interfaces Gráficas; <br>
+- 05.05 > Atividades usando jPanel para criar aplicações; <br>

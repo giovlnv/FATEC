@@ -6,3 +6,4 @@
 - 13.03 > Página de cadastro e listagem de funcionários, com demonstrativo de pagamentos e cálculo de INSS e IRPF; <br>
 - P1 > Prova 1, site com tema de modelo de negócios Confeitaria, usando CSS, JS, PHP e SQL; <br>
 - 24.04 > Página de cadastro e listagem de veículos, com cálculo de alíquota de IPVA;<br>
+- P2 > Prova 2, atualização e finalização do site com tema de modelo de negócios Confeitaria, usando CSS, JS, PHP e SQL; <br>
