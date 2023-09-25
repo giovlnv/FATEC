@@ -1,0 +1,53 @@
+biblioteca
+
+organização dos livros
+	- crd do livro
+	- organização de estoque 
+		- disponiveis
+		- nao disponiveis
+
+cliente
+	- crud cliente
+	- avaliar livro
+	- sugerir livros para compra
+	- histórico de empréstimo
+	- algoritmo de top 5 livros recomendados com base no histórico
+
+emprestimo de livros
+	- nome cliente e data de retirada, data devol automatica
+	- marcação de devolução, com/sem multa
+	- disponibilidade do livro
+	- saldo -5,00 não empresta
+	- multa de -0,20 ao dia de atraso
+
+
+
+
+entidades:
+livro
+- nome
+- isbn
+- autor
+- editora
+- capa
+- numero de paginas
+- edição/volume
+- data publicação
+- genero
+- idioma
+- serie (nao obrigatorio)
+- status
+
+
+usuario
+- nome
+- pk cpf
+- email
+- senha
+- saldo
+
+
+emprestimo
+- pk id emprestimo
+- fk deweydec
+- fk cpf

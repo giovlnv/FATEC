@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.916
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "prj_cadastro_dsm3s23", "prj_cadastro_dsm3s23.vbproj", "{9B39470B-26F0-4F73-B636-10B1D61B4E99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B39470B-26F0-4F73-B636-10B1D61B4E99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B39470B-26F0-4F73-B636-10B1D61B4E99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B39470B-26F0-4F73-B636-10B1D61B4E99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B39470B-26F0-4F73-B636-10B1D61B4E99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F79FB743-4164-4DB5-8688-52B638EB335A}
+	EndGlobalSection
+EndGlobal
