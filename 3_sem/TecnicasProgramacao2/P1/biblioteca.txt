@@ -33,7 +33,6 @@ livro
 - numero de paginas
 - edição/volume
 - data publicação
-- genero
 - idioma
 - serie (nao obrigatorio)
 - status
