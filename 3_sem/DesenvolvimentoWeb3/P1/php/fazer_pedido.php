@@ -1,7 +1,7 @@
 <?php
 session_start();
 include 'conexao.php';
-		 
+
 $email = $_SESSION['usermail'];
 $numped = $_POST["txt_data_ped"];
 $ende = $_POST["txt_endereco"];
@@ -23,6 +23,7 @@ $sql = mysql_query("DELETE FROM tb_carrinho WHERE email = '{$_SESSION['usermail'
 <html>
 
 <head>
+      <meta http-equiv="refresh" content="5.2;url=pedidos.php">
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Bolos para sua festa de aniversário, casamento ou comemorações.">
@@ -44,7 +45,7 @@ $sql = mysql_query("DELETE FROM tb_carrinho WHERE email = '{$_SESSION['usermail'
 
 <body>
       <header class="header">
-            <a href="../index.php#home" class="logo"><i class="fas fa-birthday-cake"></i>Dolcevitta</a>
+                <a href="#"><img src="../img/logo.png" class="logo"></i></a>
             <nav class="navbar" onclick="abrirMenu()">
                   <a href="../index.php#home">home</a>
                   <a href="../index.php#sobre">sobre</a>
@@ -70,17 +71,16 @@ $sql = mysql_query("DELETE FROM tb_carrinho WHERE email = '{$_SESSION['usermail'
 				} else {
 					echo '<div id="btn_login_sub" class="bx bx-log-in-circle"></div>';
 				}
-		    ?>
+		      ?>
             <div id="btn_carrinho_sub" class="bx bx-cart"></div>
 		<div id="menu-btn" class="bx bx-menu"></div>
             </div>
 
 </header>
 
-      <section class="secao-login">
-            <container class="cont-login">
-                        <h2>Pedido registrado com sucesso.</h2>
-                        <input id="botao" class="btn btn-primary mb1 bg-fuchsia" type="button" name="btn_consultar" value="Consultar" onclick="window.location.href='pedidos.php';">
+      <section class="secao-gif">
+            <container class="cont-login-2">
+                  <img src="../img/gif_pedido.gif">
             </container>
       </section>
       <script src="../js/script.js"></script>

@@ -26,7 +26,7 @@ session_start()
 
 <body>
     <header class="header">
-        <a href="../index.php#home" class="logo"><i class="fas fa-birthday-cake"></i>Dolcevitta</a>
+            <a href="#"><img src="../img/logo.png" class="logo"></i></a>
         <nav class="navbar" onclick="abrirMenu()">
             <a href="../index.php#home">home</a>
             <a href="../index.php#sobre">sobre</a>
@@ -65,6 +65,9 @@ session_start()
                 <input autocomplete="off" type="text" class="form-control" required="true" name="txt_usuario" placeholder="E-mail" id="email">
                 <input autocomplete="off" type="password" class="form-control" required="true" name="txt_senha" placeholder="Senha" id="senha">
                 <input id="botao" class="btn btn-primary mb1 bg-fuchsia" type="submit" name="btn_login" value="Entrar" onclick="document.frm_login.action='logar.php'">
+                <?php if($_SESSION['errado'] == true){
+                    echo '<p class="texto-login">Usuário ou senha incorretos.</p>';
+                    } ?> 
                 <p class="texto-login">Ainda não possui uma conta? <a class="link-login" href="cadastro.php" name="btn_cadastrar" onclick="document.frm_login.action='cadastro.php'">Cadastre-se.</a></p>
             </form>
         </container>

@@ -52,9 +52,9 @@ if (!isset($_SESSION['logged_in']) || !$_SESSION['logged_in']) {
         <link rel="stylesheet" href="../css/style.css">
     </head>
 <body>
-        	 <!-- Cabeçalho -->
+<!-- Cabeçalho -->
     <header class="header">
-    <a href="../index.php#home" class="logo"><i class="fas fa-birthday-cake"></i>Dolcevitta</a>
+        <a href="#"><img src="../img/logo.png" class="logo"></i></a>
         <nav class="navbar" onclick="abrirMenu()">
             <a href="../index.php#home">home</a>
             <a href="../index.php#sobre">sobre</a>

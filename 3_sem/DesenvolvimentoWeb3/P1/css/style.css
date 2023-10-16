@@ -35,17 +35,14 @@ body{
 }
 
 .header .logo {
-    font-size: 2rem;
-    font-weight: bolder;
-    color:var(--black);
-    text-decoration: none;
+    height: 5vh;
 }
 
 .header .logo i{
     font-size: 3.2rem;
     color: var(--secondary);
     padding-right: .8rem;
-  }
+}
 
 
 
@@ -67,16 +64,16 @@ body{
     color: var(--black);
     margin-left: 1.7rem;
     cursor: pointer;
-  }
+}
 
-  .header .icons div:hover{
+.header .icons div:hover{
     color: var(--primary-color);
     transition: .3s;
-  }
+}
 
 #menu-btn{
     display: none;
-  }
+}
 
 
 
@@ -298,6 +295,14 @@ footer{
     background-size: cover;
 }
 
+.secao-gif{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    background-color: white;
+}
+
 .cont-login{
     display: grid;
     place-items: center;
@@ -330,6 +335,11 @@ footer{
     -webkit-backdrop-filter: blur( 6.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.cont-login-2 img{
+    width: 20vw;
+    height: 35vh;
 }
 
 .cont-login-2 h4{
@@ -554,7 +564,6 @@ footer{
         padding: 0;
     }
 }
-  
 
 @media(max-height: 450px){
     .cont-login{

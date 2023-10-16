@@ -33,7 +33,7 @@ elseif ($_SESSION['usermail'] !== "admin@admin" || $_SESSION['username'] !== "ad
     
     <body>
         <header class="header">
-            <a href="../index.php#home" class="logo"><i class="fas fa-birthday-cake"></i>Dolcevitta</a>
+                <a href="#"><img src="../img/logo.png" class="logo"></i></a>
             <nav class="navbar" onclick="abrirMenu()">
                 <a href="../index.php#home">home</a>
                 <a href="../index.php#sobre">sobre</a>
@@ -86,6 +86,7 @@ else {
         OR status_pdd LIKE '{$_POST['busca_pedidos']}%'
         OR ende LIKE '{$_POST['busca_pedidos']}%'
         OR email LIKE '{$_POST['busca_pedidos']}%'
+        GROUP BY num_pedido
         ORDER BY num_pedido ASC");
     } else {
         $sql = mysql_query("SELECT cod_bolo, num_pedido, descricao, email, obs, quantidade, SUM(preco) as preco, ende, status_pdd
@@ -101,7 +102,6 @@ else {
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
                     <meta name="description" content="Bolos para sua festa de aniversário, casamento ou comemorações.">
                     <link rel="icon" href="../img/icone.png" type="image/x-icon">
-                    <title>Dolcevitta</title>
                     <link rel="stylesheet"
                         href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
                 
@@ -118,7 +118,7 @@ else {
                 
                 <body>
                     <header class="header">
-                        <a href="../index.php#home" class="logo"><i class="fas fa-birthday-cake"></i>Dolcevitta</a>
+                        <a href="#"><img src="../img/logo.png" class="logo"></i></a>
                         <nav class="navbar" onclick="abrirMenu()">
                             <a href="../index.php#home">home</a>
                             <a href="../index.php#sobre">sobre</a>
@@ -182,7 +182,6 @@ if(isset($_GET['apagar'])){
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Bolos para sua festa de aniversário, casamento ou comemorações.">
         <link rel="icon" href="../img/icone.png" type="image/x-icon">
-        <title>Dolcevitta</title>
         <link rel="stylesheet"
             href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     
@@ -199,7 +198,7 @@ if(isset($_GET['apagar'])){
     
     <body>
         <header class="header">
-            <a href="../index.php#home" class="logo"><i class="fas fa-birthday-cake"></i>Dolcevitta</a>
+                <a href="#"><img src="../img/logo.png" class="logo"></i></a>
             <nav class="navbar" onclick="abrirMenu()">
                 <a href="../index.php#home">home</a>
                 <a href="../index.php#sobre">sobre</a>
@@ -269,7 +268,7 @@ if(isset($_GET['apagar'])){
 <body>
 	 <!-- Cabeçalho -->
 <header class="header">
-	<a href="../index.php" class="logo"><i class="fas fa-birthday-cake"></i>Dolcevitta</a>
+    <a href="#"><img src="../img/logo.png" class="logo"></i></a>
 	<nav class="navbar" onclick="abrirMenu()">
 		<a href="../index.php">home</a>
 	</nav>

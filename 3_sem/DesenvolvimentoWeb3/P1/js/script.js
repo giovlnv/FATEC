@@ -44,6 +44,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// VALIDAÇÃO DO PEDIDO
+
 document.addEventListener("DOMContentLoaded", function() {
   var botao = document.getElementById("btn_pedir");
   if (botao) {
@@ -77,6 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+// VITRINE
 
 var vitrineImagens = document.querySelectorAll('.vitrine img');
 for (var i = 0; i < vitrineImagens.length; i++) {

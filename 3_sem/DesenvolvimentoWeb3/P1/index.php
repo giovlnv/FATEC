@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+$_SESSION['errado'] = false;
+
 if(isset($_SESSION['form_preench'])) {
     $tam_pedido = $_SESSION['tam_pedido'];
     $massa_pedido = $_SESSION['massa_pedido'];
@@ -36,7 +38,7 @@ $login_status = 'deslogado';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bolos para sua festa de aniversário, casamento ou comemorações.">
-    <link rel="icon" href="/img/icone.png   " color="#783b31" type="image/x-icon">
+    <link rel="icon" href="img/icone.png" color="#783b31" type="image/x-icon">
     <title>Dolcevitta</title>
     <link rel="stylesheet"
         href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -57,7 +59,7 @@ $login_status = 'deslogado';
     <!-- Cabeçalho -->
     <header class="header">
         
-        <a href="#" class="logo"><i class="fas fa-birthday-cake"></i>Dolcevitta</a>
+        <a href="#"><img src="img/logo.png" class="logo"></i></a>
         <nav class="navbar" onclick="abrirMenu()">
             <a href="#home">home</a>
             <a href="#sobre">sobre</a>
