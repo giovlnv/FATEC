@@ -11,10 +11,11 @@
 # ignorar primeiro semestre
 1_sem
 
-# ignorar BDR, ES e MPC
+# ignorar BDR, ES, MPC, MPC2 e AL
 2_sem/BancoDadosRelacional
 2_sem/EngenhariaSoftware2
 2_sem/MatematicaComputacao
+3_sem/AlgebraLinear
 
 #ignorar atividade ED
 2_sem/EstruturaDados/ESTRUTURA_DE_DADOS_ATV06_GIOVANNA_APARECIDA_VILLANOVA.docx
