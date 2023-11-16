@@ -1,11 +1,21 @@
-nome,descrição,latitude,longitude
-Ouro Preto,"Cidade histórica com arquitetura colonial, igrejas barrocas e minas de ouro.",-20.3796,-43.5122
-Inhotim,"Maior museu a céu aberto da América Latina, com jardins botânicos e coleção de arte contemporânea.",-20.1317,-44.0609
-Tiradentes,"Cidade preservada com ruas de pedra, igrejas históricas e eventos culturais.",-21.1106,-44.1736
-Parque Nacional da Serra do Cipó,"Área de preservação com belas cachoeiras, trilhas e paisagens naturais.",-19.3122,-43.5886
-Santuário do Caraça,Antigo colégio religioso em uma área de conservação com trilhas e uma rica biodiversidade.,-20.0867,-43.4875
-Praça da Liberdade,"Em Belo Horizonte, é um complexo cultural com prédios históricos, jardins e eventos.",-19.9336,-43.9379
-Gruta da Lapinha,Formação rochosa impressionante com estalactites e estalagmites.,-19.7357,-43.8781
-Cachoeira do Tabuleiro,"Maior queda d'água de Minas Gerais, localizada no Parque Nacional da Serra do Cipó.",-19.3538,-43.5615
-Museu das Minas e do Metal,"Em Belo Horizonte, apresenta a história da mineração e da metalurgia na região.",-19.9185,-43.9383
-Parque Natural do Caraça,"Reserva natural com fauna e flora diversificadas, ideal para ecoturismo.",-20.0865,-43.4869
+Cidade,Descrição,Quantidade de Pontos Turísticos,Latitude,Longitude
+Ouro Preto,Cidade histórica com arquitetura colonial e diversas igrejas barrocas.,20+,-20.3796,-43.5122
+Belo Horizonte,"Capital de Minas Gerais, com museus, parques e arquitetura moderna.",10+,-19.9190,-43.9386
+Mariana,"Cidade próxima a Ouro Preto, também com arquitetura colonial e museus.",10+,-20.3778,-43.4140
+Tiradentes,Preserva a arquitetura colonial e é famosa por eventos culturais.,10+,-21.1106,-44.1736
+Diamantina,Cidade histórica com casarões coloniais e paisagens serranas.,10+,-18.2448,-43.6000
+São João del-Rei,Conserva o estilo colonial e é conhecida por suas festas tradicionais.,10+,-21.1314,-44.2522
+Sabará,"Cidade histórica próxima a Belo Horizonte, com igrejas e museus.",10+,-19.8912,-43.8269
+Congonhas,Famosa pelas estátuas de Aleijadinho e igrejas barrocas.,10+,-20.5044,-43.8583
+Conselheiro Lafaiete,Oferece atrações históricas e naturais nas proximidades.,10+,-20.6605,-43.7849
+Sabará,"Cidade histórica próxima a Belo Horizonte, com igrejas e museus.",10+,-19.8912,-43.8269
+Juiz de Fora,"Importante centro cultural e universitário, com arquitetura histórica.",10+,-21.7591,-43.3392
+Poços de Caldas,"Estância hidromineral com belezas naturais, parques e atrações turísticas.",10+,-21.7892,-46.5673
+Montes Claros,"Destaque regional, com praças, igrejas e eventos culturais.",10+,-16.7272,-43.8697
+Governador Valadares,Conhecida pela prática de esportes radicais e eventos culturais.,10+,-18.8542,-41.9568
+Uberlândia,"Importante polo econômico e cultural, com parques e eventos.",10+,-18.9136,-48.2750
+São Thomé das Letras,Cidade mística com paisagens naturais e lendas locais.,10+,-21.7215,-44.9825
+Sete Lagoas,"Oferece atrações históricas, parques e uma barragem imponente.",10+,-19.4656,-44.2469
+Nova Lima,"Próxima a Belo Horizonte, conhecida por suas paisagens e mineração.",10+,-19.9846,-43.8506
+Lavras,"Importante centro universitário, com praças e patrimônio histórico.",10+,-21.2425,-45.0002
+Patos de Minas,"Destaque regional, com eventos culturais e paisagens naturais.",10+,-18.5766,-46.5193
