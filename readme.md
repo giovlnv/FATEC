@@ -4,7 +4,7 @@ Compilado de projetos, atividades e trabalhos desenvolvidos durante minha gradua
 # Linguagens
 Nas matérias que tive até o momento, as seguintes linguagens foram abordadas:
 
-- .Bat <br>
+- batch <br>
 - C++ <br>
 - HTML, CSS <br>
 - JavaScript <br>
@@ -12,4 +12,3 @@ Nas matérias que tive até o momento, as seguintes linguagens foram abordadas:
 - PHP <br>
 - Java <br>
 - Power Apps <br>
-
