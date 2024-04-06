@@ -428,16 +428,7 @@ body {
     font-size: 1.7rem;
 }
 
-.feed-text {
-    display: flex;
-    align-items: center;
-}
-
-.feed-text h2 {
-    font-size: 1rem;
-    margin-right: 1rem;
-}
-
+/* posts */
 .main-posts {
     display: grid;
     place-items: center;
