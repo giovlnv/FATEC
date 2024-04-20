@@ -14,34 +14,34 @@ const distanceFull = document.querySelector(".eventos-full-view .distance");
 let currentActive = 0;
 
 const createEvent = () => {
-    allEvents.forEach((s, i) => {
-      const event = document.createElement("div");
-      event.classList.add("eventos-local");
-      event.classList.add(`event-${i}`);
-  
-      const img = document.createElement("img");
-      img.src = s.imageUrl;
-  
-      const owner = document.createElement("div");
-      owner.classList.add("owner");
-      owner.innerHTML = s.owner;
-  
-      const distance = document.createElement("div");
-      distance.classList.add("distance");
-      distance.innerHTML = s.distance;
-  
-      event.appendChild(img);
-      event.appendChild(owner);
-      event.appendChild(distance);
-  
-      eventos.appendChild(event);
-  
-      event.addEventListener("click", () => {
-        showFullView(i);
-      });
+  allEvents.forEach((s, i) => {
+    const event = document.createElement("div");
+    event.classList.add("eventos-local");
+    event.classList.add(`event-${i}`);
+
+    const img = document.createElement("img");
+    img.src = s.imageUrl;
+
+    const owner = document.createElement("div");
+    owner.classList.add("owner");
+    owner.innerHTML = s.owner;
+
+    const distance = document.createElement("div");
+    distance.classList.add("distance");
+    distance.innerHTML = s.distance;
+
+    event.appendChild(img);
+    event.appendChild(owner);
+    event.appendChild(distance);
+
+    eventos.appendChild(event);
+
+    event.addEventListener("click", () => {
+      showFullView(i);
     });
-  };
-  
+  });
+};
+
 
 createEvent();
 
@@ -117,3 +117,44 @@ const createPosts = (posts) => {
 };
 
 createPosts(postsData);
+
+// FORMULARIO
+
+let currentPage = 1;
+const pages = document.querySelectorAll('.form-page');
+
+function nextPage() {
+  if (currentPage < pages.length) {
+    pages[currentPage - 1].classList.remove('active');
+    pages[currentPage].classList.add('active');
+    currentPage++;
+  }
+}
+
+function prevPage() {
+  if (currentPage > 1) {
+    pages[currentPage - 1].classList.remove('active');
+    pages[currentPage - 2].classList.add('active'); 
+    currentPage--;
+  }
+}
+
+function submitForm() {
+  const formData = new FormData();
+  const inputs = document.querySelectorAll('.form-page.active input');
+  inputs.forEach(input => {
+    formData.append(input.name, input.value);
+  });
+
+  fetch('url_do_seu_endpoint_de_envio', {
+    method: 'POST',
+    body: formData
+  })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+    })
+    .catch(error => {
+      console.error('Erro ao enviar formulário:', error);
+    });
+}

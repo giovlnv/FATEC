@@ -16,6 +16,10 @@ body {
     background: #f8f8f8;
 }
 
+body#login {
+    background: #ffffff;
+}
+
 :root {
     --gradient: linear-gradient(to right, #044983, #F28B30);
     --gradient2: linear-gradient(transparent, #222 70%);
@@ -498,4 +502,113 @@ body {
 .likes span {
     font-size: 14px;
     margin-left: 7px;
+}
+
+.login-container {
+    position: absolute;
+    width: 90vh;
+    max-width: 800px;
+    height: 70vh;
+    max-height: 800px;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    padding: 2vh;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container-content {
+    text-align: left;
+}
+
+.login-logo {
+    width: 264px;
+    height: 99px;
+    margin: 0 auto 10vh auto;
+    background: url('img/logo.png') no-repeat center;
+    background-size: contain;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container input[type="date"]{
+    width: 481px;
+    height: 45px;
+    gap: 0px;
+    opacity: 0px;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 0.2rem;
+    margin-top: 0.5vh;
+    margin-bottom: 3vh;
+    padding: 2vh;
+}
+
+.login-container input[type="password"]{
+    margin-bottom: 1vh;
+}
+
+.login-container h3 {
+    gap: 0px;
+    opacity: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    text-align: left;
+}
+
+.login-container h3 a {
+    color: #044983;
+    font-size: 10px;
+    text-decoration: none;
+    margin-top: 0.2vh;
+}
+
+.login-container h4 {
+    gap: 0px;
+    opacity: 0px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14.06px;
+    text-align: left;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.login-container h4 a {
+    color: #044983;
+    text-decoration: none;
+    margin-top: 0.2vh;
+}
+
+.login-container .btn {
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 20px;
+    background: rgba(4, 73, 131, 0.8);
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    display: block;
+    margin: 7vh auto 0;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.login-container .btn:hover {
+    background: rgba(4, 73, 131, 1);
+    text-decoration: none;
+}
+
+.form-page {
+    display: none; /* Inicia oculta */
+    padding: 20px;
+}
+
+.form-page.active {
+    display: block; /* Mostra a página ativa */
 }
