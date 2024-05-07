@@ -34,6 +34,7 @@ body#login {
     height: 100vh;
     background: #f8f8f8;
     padding: 20px;
+    border: none;
 }
 
 /* estilo do feed */
@@ -42,10 +43,10 @@ body#login {
     width: calc(100% - 250px);
     min-height: 100vh;
     top: 0;
-    left: 250px;
     background: #fff;
     border-radius: 1rem 0 0 1rem;
     z-index: 1000;
+    border: none;
 }
 
 /* logo */
@@ -167,12 +168,16 @@ body#login {
 }
 
 /* main home */
-.main-home {
-    position: absolute;
-    width: calc(100%-250px);
+.content-main{
+    position: fixed;
+    width: 100%;
     min-height: 100vh;
     top: 0;
     left: 250px;
+    border: none;
+}
+
+.main-home {
     background: #fff;
     border-radius: 1rem;
     padding: 20px;
@@ -535,7 +540,9 @@ body#login {
 
 .login-container input[type="text"],
 .login-container input[type="password"],
-.login-container input[type="date"]{
+.login-container input[type="date"],
+.login-container input[type="number"],
+.login-container textarea {
     width: 481px;
     height: 45px;
     gap: 0px;
@@ -548,8 +555,26 @@ body#login {
     padding: 2vh;
 }
 
+.login-container textarea{
+    resize: none;
+    height: 120px;
+}
+
+.login-container input[type="file"]{
+    display: none;
+}
+
 .login-container input[type="password"]{
     margin-bottom: 1vh;
+}
+
+.login-container .preview img {
+    width:100%;
+    height: 100%;
+    width: 7.5rem;
+    height: 12.5rem;
+    /* display:none; */
+    margin: 0.5rem auto;
 }
 
 .login-container h3 {
@@ -611,4 +636,114 @@ body#login {
 
 .form-page.active {
     display: block; /* Mostra a página ativa */
+}
+
+/* CADASTRO EVENTOS */
+
+.cadastro-container {
+    position: absolute;
+    width: 90vh;
+    max-width: 800px;
+    height: 70vh;
+    max-height: 800px;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    padding: 2vh;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15rem;
+}
+
+.cadastro-container-content {
+    text-align: left;
+}
+
+.cadastro-container input[type="text"],
+.cadastro-container input[type="date"],
+.cadastro-container input[type="number"],
+.cadastro-container textarea {
+    width: 481px;
+    height: 45px;
+    gap: 0px;
+    opacity: 0px;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 0.2rem;
+    margin-top: 0.5vh;
+    margin-bottom: 3vh;
+    padding: 2vh;
+}
+
+.cadastro-container textarea{
+    resize: none;
+    height: 120px;
+}
+
+.cadastro-container input[type="file"]{
+    display: none;
+}
+
+.cadastro-container .preview img {
+    width:100%;
+    height: 100%;
+    width: 7.5rem;
+    height: 12.5rem;
+    display:none;
+    margin: 0.5rem auto;
+}
+
+.cadastro-container h3 {
+    gap: 0px;
+    opacity: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.06px;
+    text-align: left;
+}
+
+.cadastro-container h3 a {
+    color: #044983;
+    font-size: 10px;
+    text-decoration: none;
+    margin-top: 0.2vh;
+}
+
+.cadastro-container h4 {
+    gap: 0px;
+    opacity: 0px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14.06px;
+    text-align: left;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.cadastro-container h4 a {
+    color: #044983;
+    text-decoration: none;
+    margin-top: 0.2vh;
+}
+
+.cadastro-container .btn {
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 20px;
+    background: rgba(4, 73, 131, 0.8);
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    display: block;
+    margin: 7vh auto 0;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.cadastro-container .btn:hover {
+    background: rgba(4, 73, 131, 1);
+    text-decoration: none;
 }

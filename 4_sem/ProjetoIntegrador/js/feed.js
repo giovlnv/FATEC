@@ -1,5 +1,5 @@
-import { allEvents } from '../js/main.js';
-import { postsData } from '../js/main.js';
+import { allEvents } from './main.js';
+import { postsData } from './main.js';
 
 
 // EVENTOS
@@ -117,44 +117,3 @@ const createPosts = (posts) => {
 };
 
 createPosts(postsData);
-
-// FORMULARIO
-
-let currentPage = 1;
-const pages = document.querySelectorAll('.form-page');
-
-function nextPage() {
-  if (currentPage < pages.length) {
-    pages[currentPage - 1].classList.remove('active');
-    pages[currentPage].classList.add('active');
-    currentPage++;
-  }
-}
-
-function prevPage() {
-  if (currentPage > 1) {
-    pages[currentPage - 1].classList.remove('active');
-    pages[currentPage - 2].classList.add('active'); 
-    currentPage--;
-  }
-}
-
-function submitForm() {
-  const formData = new FormData();
-  const inputs = document.querySelectorAll('.form-page.active input');
-  inputs.forEach(input => {
-    formData.append(input.name, input.value);
-  });
-
-  fetch('url_do_seu_endpoint_de_envio', {
-    method: 'POST',
-    body: formData
-  })
-    .then(response => response.json())
-    .then(data => {
-      console.log(data);
-    })
-    .catch(error => {
-      console.error('Erro ao enviar formulário:', error);
-    });
-}
