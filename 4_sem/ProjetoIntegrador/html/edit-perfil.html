@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eviene perfil</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+
+<body id="edit-perfil">
+    <div class="edit-container">
+        <div class="edit-container-content">
+            <form method="post" id="editProfile" enctype="multipart/form-data">
+                <label>
+                    <input type="file" accept="image/*" onchange="showPreview(event);" id="file-ip-1" name="images" multiple>
+                    <div class="preview">
+                        <img id="file-ip-1-preview">
+                    </div>
+                </label>
+                <h3>Nome</h3>
+                <input type="text" name="name" id="name"><br>
+                <h3>Nome de Usuário</h3>
+                <input type="text" name="username" id="username"><br>
+                <h3>Bio</h3>
+                <textarea name="bio" maxlength="500" id="bio"></textarea><br>
+                <div class="edit-container-content">
+                    <input type="submit" class="btn" value="Salvar">
+                    <input type="button" class="btn btn-delete" value="Excluir conta" onclick="excluirConta()">
+                </div>
+                </form>
+            
+
+        </div>
+    </div>
+
+<script src="../js/edit-perfil.js"></script>
+    </body>
+
+</html>

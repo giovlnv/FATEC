@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="../style.css">
     <!-- remix icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- script -->
+    <script src="../js/infos.js"></script>
+    <script src="../js/checklogin.js"></script>
+    <script type="module" src="../js/sidebar.js"></script>
 </head>
 
 <body>
@@ -21,69 +25,62 @@
         <!-- profile image -->
         <div class="profile">
             <div class="profile-img">
-                <img src="../img/profile.png" alt="">
+                <img src="../img/profile.png" alt="" id="profilePicture">
             </div>
             <div class="name">
-                <h1>gigio</h1>
+                <h1 id="name"></h1>
                 <div class="verified-icon"></div>
             </div>
-            <span>@gigiovlnv</span>
+            <span id="username"></span>
         </div>
         <!-- about -->
         <div class="about">
             <!-- box posts -->
             <div class="box">
-                <h3>54</h3>
+                <h3 id="posts"></h3>
                 <span>Posts</span>
             </div>
             <!-- box followers -->
             <div class="box">
-                <h3>14.4K</h3>
+                <h3 id="followers"></h3>
                 <span>Followers</span>
             </div>
             <!-- box following -->
             <div class="box">
-                <h3>3</h3>
+                <h3 id="following"></h3>
                 <span>Following</span>
             </div>
         </div>
         <!-- menu -->
         <div class="menu">
-            <a href="#" class="active">
+            <a href="#" class="menu-link active" onclick="changeFrame('main.html')">
                 <span class="icon">
                     <i class="ri-function-line"></i>
                 </span>
                 Feed
             </a>
-            <a href="evento.html">
+            <a href="#" class="menu-link" onclick="changeFrame('evento.html')">
                 <span class="icon">
                     <i class="ri-add-fill"></i>
                 </span>
                 Novo evento
             </a>
-            <a href="#">
+            <a href="#" class="menu-link" onclick="changeFrame('edit-perfil.html')">
                 <span class="icon">
-                    <i class="ri-search-line"></i>
+                    <i class="ri-settings-2-line"></i>
                 </span>
-                Explorar
-                <a href="#">
-                    <span class="icon">
-                        <i class="ri-settings-2-line"></i>
-                    </span>
-                    Configurações
-                </a>
-                <a href="login.html">
-                    <span class="icon">
-                        <i class="ri-logout-box-r-line"></i>
-                    </span>
-                    Login
-                </a>
+                Configurações
+            </a>
+            <a href="login.html">
+                <span class="icon">
+                    <i class="ri-logout-box-r-line"></i>
+                </span>
+                Logout
+            </a>
         </div>
     </div>
     <div class="content-main">
-        <iframe src="main.html" class="content-main">
+        <iframe src="main.html" class="content-main" id="mainFrame">
     </div>
-    <script src="../js/main.js"></script>
 </body>
-
 </html>
